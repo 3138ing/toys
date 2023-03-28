@@ -22,3 +22,8 @@ print(timestamp_1)
 # int -> 'formatted string'
 formatted_string_1 = datetime.datetime.fromtimestamp(timestamp_1).strftime('%Y-%m-%d %H:%M:%S')
 print(formatted_string_1)
+
+# datetime -> int
+datetime_1 = datetime.datetime.fromtimestamp(timestamp_1)
+timestamp_1 = datetime.datetime.timestamp(datetime_1)
+print(timestamp_1)
