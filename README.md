@@ -1,5 +1,8 @@
-#### 2023-03-28_snippet_df.py
-> pandas
+#### 2023-03-29_snippet_matplotlib.py
+> pandas matplotlib
+
+#### 2023-03-28_snippet_dataframe.py
+> pandas dataframe
 
 #### 2023-03-28_snippet_time.py
 > datatime, time
