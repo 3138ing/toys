@@ -1,4 +1,5 @@
-# 미완성
+# linear regression
+
 import pandas as pd
 import seaborn as sns
 import numpy as np
@@ -26,3 +27,15 @@ fig = plt.figure(figsize = (10, 5))
 plt.plot(X_train, y_train, 'o')
 plt.plot(X_test, y_hat_test, 'r+')
 plt.show()
+
+
+# fbprophet
+from fbprophet import Prophet
+m = Prophet()
+m.fit(df)
+future = m.make_future_dataframe(periods=365)
+future.tail()
+forecast = m.predict(future)
+forecast.tail()
+#forecast[['ds', 'yhat', 'yhat_lower', 'yhat_upper']].tail(60)
+fig1 = m.plot(forecast)
