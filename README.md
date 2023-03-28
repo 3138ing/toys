@@ -1,4 +1,4 @@
-#### 2023-03-29_snippet_sklearn.py
+#### 2023-03-29_snippet_ml_nn.py
 > sklearn
 
 #### 2023-03-29_snippet_matplotlib.py
