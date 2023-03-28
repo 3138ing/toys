@@ -1,3 +1,7 @@
+# list -> df
 columns_1 = ['colname1', 'colname2']
 list_1 = [[1, 2, 3], [4, 5, 6]]
 df_1 = pd.DataFrame(list_1, columns=columns_1)
+
+# column to index
+df_1.set_index('colname1', inplace=True)
