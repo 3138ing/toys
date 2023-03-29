@@ -1,3 +1,4 @@
+import pandas as pd
 import matplotlib.pyplot as plt
 
 column_names_1 = ['column_name_1', 'column_name_2', 'column_name_3']
