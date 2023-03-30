@@ -39,3 +39,6 @@ df_1 = pd.DataFrame(list_1, columns=column_names_1)
 # print(df_1.fillna(9.9999))
 # print(df_1.dropna()) # "결측치 행 삭제"
 # print(df_1[df_1.index.notnull()]) # index가 결측치일 경우 "결측치 행 삭제"
+
+# groupby
+# df_1[['column_name_2', 'column_name_3']].groupby('column_name_2').count()
