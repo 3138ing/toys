@@ -4,11 +4,14 @@ import numpy as np
 # options
 pd.set_option('display.max_rows', 500)
 
-# list -> df
+# from: list
 column_names_1 = ['column_name_1', 'column_name_2', 'column_name_3']
 list_1 = [['a', 1, 2], ['b', 3, 4], ['c', np.NaN, 6], ['d', 17132.5132, 8]]
 df_1 = pd.DataFrame(list_1, columns=column_names_1)
 #print(df_1)
+
+# from: file
+#df_1 = pd.read_csv('d:\\test.csv', sep='\t', header=None, names=['t1', 't2'])
 
 # index: column to index
 df_1.set_index('column_name_1', inplace=True)
