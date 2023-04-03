@@ -28,6 +28,10 @@ df_1 = pd.DataFrame(list_1, columns=column_names_1)
 # column: 누적합(cumsum), 누적Max(cummax), 누적Min(cummin), 누적곱(cumprod)
 # print(df_1['column_name_3'].cumsum())
 
+# column: 이름바꾸기
+# print(df_1['column_name_3'].cumsum())
+# df_1.rename(columns = {'column_name_1':'column_name_10','column_name_3':'column_name_30'},inplace=True)
+
 # data: round
 # print(df_1.round(-2))
 
