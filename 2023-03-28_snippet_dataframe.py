@@ -11,7 +11,7 @@ column_names_1 = ['column_name_1', 'column_name_2', 'column_name_3']
 list_1 = [['a', 1, 2], ['b', 3, 4], ['c', np.NaN, 6], ['d', 17132.5132, 8]]
 list_1 = [('a', 1, 2), ('b', 3, 4), ('c', np.NaN, 6), ('d', 17132.5132, 8)]
 df_1 = pd.DataFrame(list_1, columns=column_names_1)
-# print(df_1)
+print(df_1)
 
 # from: read_csv
 # encoding: 'euc-kr', 'cp949', 'utf-8'
@@ -28,9 +28,18 @@ df_1 = pd.DataFrame(list_1, columns=column_names_1)
 # column: 누적합(cumsum), 누적Max(cummax), 누적Min(cummin), 누적곱(cumprod)
 # print(df_1['column_name_3'].cumsum())
 
+# column: 순서바꾸기
+# df_1[['column_name_2', 'column_name_3', 'column_name_1']]
+# column: 추가하기
+
 # column: 이름바꾸기
 # print(df_1['column_name_3'].cumsum())
 # df_1.rename(columns = {'column_name_1':'column_name_10','column_name_3':'column_name_30'},inplace=True)
+
+# column: 추가하기
+# df_1['column_name_4'] = 'usa'
+# df_1.loc[:, 'column_name_5'] = 'korea'
+# print(df_1)
 
 # data: round
 # print(df_1.round(-2))
@@ -46,3 +55,4 @@ df_1 = pd.DataFrame(list_1, columns=column_names_1)
 
 # groupby
 # df_1[['column_name_2', 'column_name_3']].groupby('column_name_2').count()
+
