@@ -1,6 +1,3 @@
-#### 2023-03-29_snippet_ml_nn.py
-> ml, nn, fbprophet
-
 #### 2023-03-29_snippet_matplotlib.py
 > pandas matplotlib
 
@@ -21,8 +18,8 @@
 #### 2022-06-14_ipynb_export.py
 > ipynb파일을 py로 변환
 
-|제목|내용|설명|
-|------|---|---|
-|2023-03-29_snippet_ml_nn.py|ml, nn, fbprophet|테스트3|
-|테스트1|테스트2|테스트3|
-|테스트1|테스트2|테스트3|
+|filename|description
+|------|---|
+|2023-03-29_snippet_ml_nn.py|ml, nn, fbprophet|
+|#### 2023-03-29_snippet_matplotlib.py|> pandas matplotlib|
+|테스트1|테스트2|
