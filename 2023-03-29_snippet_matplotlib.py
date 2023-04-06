@@ -12,3 +12,15 @@ plt.axvline(x='bbbb', color='orange', linestyle='--', linewidth=1)
 plt.axhline(y=5, color='red', linestyle='-.', linewidth=1)
 plt.xticks(df_1.index, rotation=45)
 plt.legend()
+
+# Tableau color
+#'tab:blue'
+#'tab:orange'
+#'tab:green'
+#'tab:red'
+#'tab:purple'
+#'tab:brown'
+#'tab:pink'
+#'tab:gray'
+#'tab:olive'
+#'tab:cyan'
