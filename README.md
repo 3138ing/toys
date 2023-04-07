@@ -1,4 +1,4 @@
-|filename|description
+|filename|description|type|
 |------|---|---|
 |#### 2023-03-29_snippet_ml_nn.py|> ml, nn, fbprophet|py|
 |#### 2023-03-29_snippet_matplotlib.py|> pandas matplotlib|py|
