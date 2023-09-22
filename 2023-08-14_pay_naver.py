@@ -1,9 +1,12 @@
 import json
+import datetime
 
 pay = __import__('2023-08-29_pay')
 
 filename_head = 'paymoneyList_n_'
 filename_result = filename_head + 'result'
+
+요일 = '월화수목금토일'
 
 def payopen(num):
     filename = filename_head + num
@@ -29,9 +32,10 @@ def payopen(num):
             title, part1, part2, description = pay.naver(title, part1, part2, description)
 
             data = []
-            data.append(item["PAYDTTM"][0:4] + '년')
-            data.append(item["PAYDTTM"][4:6] + '월')
-            data.append(item["PAYDTTM"][6:8] + '일')
+            data.append("'" + item["PAYDTTM"][0:4])
+            data.append("'" + item["PAYDTTM"][4:6])
+            data.append("'" + item["PAYDTTM"][6:8])
+            data.append(요일[datetime.datetime.strptime(item["PAYDTTM"][0:8], "%Y%m%d").weekday()])
             data.append('하나')
             data.append(part1)
             data.append(part2)
@@ -49,7 +53,7 @@ with open(filename_result, 'w') as f:
     pass
 
 start = 0
-end = 0
+end = 1
 
 for i in range(start, end+1):
     num = str(i)
