@@ -76,8 +76,8 @@ for item in node_entries:
             data.append('-')
             data.append('-')
             
-            if data[0] != "'2023" or data[1] != "'05":
-                continue
+            #if data[0] != "'2023" or data[1] != "'05":
+            #    continue
 
             f.write('\t'.join(data) + '\n')
 
