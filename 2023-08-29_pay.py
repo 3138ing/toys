@@ -1,3 +1,5 @@
+def get_har_filename():
+    return ''
 def shinhan(title, part1, part2, description, splits):
     return title, part1, part2, description
 

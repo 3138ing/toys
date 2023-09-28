@@ -12,9 +12,6 @@ def get_node(object, node_name_list):
             sys.exit(0)
     return search_object
 
-filename  = ""
-har = ""
-
 pay = __import__('2023-08-29_pay')
 
 filename_head = 'paymoneyList_n_'
@@ -25,7 +22,8 @@ with open(filename_result, 'w') as f:
 
 요일 = '월화수목금토일'
 
-with open(filename, 'r', encoding='utf-8') as f:
+har = None
+with open(pay.get_har_filename(), 'r', encoding='utf-8') as f:
     har = json.load(f)
 
 node_entries = get_node(har, ["log", "entries"])
