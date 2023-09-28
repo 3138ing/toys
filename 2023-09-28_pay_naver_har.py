@@ -57,6 +57,9 @@ for item in node_entries:
             title, part1, part2, part3, description1, description2 = pay.naver(title, part1, part2, part3, description1, description2)
 
             data = []
+            data.append("=date(" + item["PAYDTTM"][0:4] +
+                             "," + item["PAYDTTM"][4:6] +
+                             "," + item["PAYDTTM"][6:8] + ")")
             data.append("'" + item["PAYDTTM"][0:4])
             data.append("'" + item["PAYDTTM"][4:6])
             data.append("'" + item["PAYDTTM"][6:8])
@@ -74,8 +77,8 @@ for item in node_entries:
             data.append('-')
             data.append('-')
             
-            #if data[0] != "'2023" or data[1] != "'05":
-            #    continue
+            if data[1] != "'2023" or data[2] != "'05":
+                continue
 
             f.write('\t'.join(data) + '\n')
 
