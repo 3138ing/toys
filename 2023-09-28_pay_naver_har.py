@@ -12,7 +12,7 @@ def get_node(object, node_name_list):
             sys.exit(0)
     return search_object
 
-filename  = "C:\\Users\\강현우\\Downloads\\new-m.pay.naver.com.har"
+filename  = ""
 har = ""
 
 pay = __import__('2023-08-29_pay')
