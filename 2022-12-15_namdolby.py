@@ -24,7 +24,12 @@ mitems = [
 
 def mail(mitem, contents):
     # SMTP
+    SMTP_SERVER = 'smtp.gmail.com'
+    SMTP_SERVER = 'smtp.live.com'
+    SMTP_SERVER = 'smtp.naver.com'
     SMTP_SERVER = ...
+    SMTP_PORT = 465
+    SMTP_PORT = 587
     SMTP_PORT = ...
     SMTP_USER = ...
     SMTP_PASSWORD = ...
@@ -39,7 +44,8 @@ def mail(mitem, contents):
     msg.attach(mimetext)
 
     # smtp
-    ssl_context = ssl.SSLContext(ssl.PROTOCOL_TLSv1_2)
+    # ssl_context = ssl.SSLContext(ssl.PROTOCOL_TLSv1_2)
+    ssl_context = ssl.create_default_context()
     ssl_context.set_ciphers('DEFAULT:!DH')
     smtp = smtplib.SMTP_SSL(SMTP_SERVER, SMTP_PORT, context=ssl_context)
     smtp.login(SMTP_USER, SMTP_PASSWORD)
