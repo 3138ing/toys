@@ -1,6 +1,6 @@
 |filename|description|type|
 |------|---|---|
-|#### 2022-04-19_snippet_colab.py.py|> colab 환경설정|py|
+|#### 2022-04-19_snippet_colab.py|> colab 환경설정|py|
 |#### 2023-03-29_snippet_ml_nn.py|> ml, nn, fbprophet|py|
 |#### 2023-03-29_snippet_matplotlib.py|> pandas matplotlib|py|
 |#### 2023-03-28_snippet_dataframe.py|> pandas dataframe|py|
