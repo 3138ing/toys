@@ -1,3 +1,7 @@
+import sys
+sys.path.insert(0, '../toys-data')
+import conf
+
 import requests
 import json
 import time
@@ -27,17 +31,17 @@ def mail(mitem, contents):
     SMTP_SERVER = 'smtp.gmail.com'
     SMTP_SERVER = 'smtp.live.com'
     SMTP_SERVER = 'smtp.naver.com'
-    SMTP_SERVER = ...
+    SMTP_SERVER = conf.SMTP_SERVER
     SMTP_PORT = 465
     SMTP_PORT = 587
-    SMTP_PORT = ...
-    SMTP_USER = ...
-    SMTP_PASSWORD = ...
+    SMTP_PORT = conf.SMTP_PORT
+    SMTP_USER = conf.SMTP_USER
+    SMTP_PASSWORD = conf.SMTP_PASSWORD
     
     # mime
     msg = MIMEMultipart('alternative')
-    msg['From'] = ...
-    msg['To'] = ...
+    msg['From'] = conf.SMTP_FROM
+    msg['To'] = conf.SMTP_TO
     msg['Subject'] = mitem.brchNm
 
     mimetext = MIMEText(contents, _charset='utf-8')
@@ -54,7 +58,7 @@ def mail(mitem, contents):
 
 def slack(mitem, contents):
     requests.post(
-    'https://hooks.slack.com/services/.../...',
+    f'https://hooks.slack.com/services/{conf.SLACK_WEBHOOK_URL}',
     headers={
         'content-type': 'application/json'
     },
