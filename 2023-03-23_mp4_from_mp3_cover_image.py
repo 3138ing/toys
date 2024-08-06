@@ -1,8 +1,12 @@
+import sys
+sys.path.insert(0, '../toys-data')
+import conf
+
 from moviepy.editor import AudioFileClip, ImageClip
 
-audio_path = r'D:\pc\01\sync\영어CD\Ready,Action!\track\40.S_6-7.mp3'
-image_path = r'D:\pc\01\sync\영어CD\Ready,Action!\my\57.S_6-7.png'
-output_path = r'D:\pc\01\sync\영어CD\Ready,Action!\my\57.S_6-7.mp4'
+audio_path = conf.READY_ACTION_AUDIO_PATH
+image_path = conf.READY_ACTION_IMAGE_PATH
+output_path = conf.READY_ACTION_OUTPUT_PATH
 
 audio_clip = AudioFileClip(audio_path)
 image_clip = ImageClip(image_path)
