@@ -1,7 +1,9 @@
 import json
 import datetime
-
-pay = __import__('2023-08-29_pay')
+import sys
+sys.path.insert(0, '../toys-data')
+import conf
+import pay
 
 filename_head = 'paymoneyList_n_'
 filename_result = filename_head + 'result'
@@ -51,8 +53,8 @@ def payopen(num):
             data.append('-')
             data.append('-')
             
-            if data[0] != "'2023" or data[1] != "'05":
-                continue
+            # if data[0] != "'2024" or data[1] != "'08":
+            #     continue
 
             f.write('\t'.join(data) + '\n')
 
@@ -64,7 +66,7 @@ with open(filename_result, 'w') as f:
     pass
 
 start = 0
-end = 9
+end = 1
 
 #for i in range(end, start - 1, -1):
 for i in range(start, end+1):
