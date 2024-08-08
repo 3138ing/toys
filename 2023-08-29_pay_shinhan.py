@@ -1,6 +1,8 @@
-pay = __import__('2023-08-29_pay')
+import sys
+sys.path.insert(0, '../toys-data')
+import pay
 
-filename_head = 'paymoneyList_s_'
+filename_head = '../toys-data/var/paymoneyList_s_'
 filename_result = filename_head + 'result'
 
 def tsum(str1, str2):
