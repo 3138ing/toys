@@ -1,9 +1,9 @@
-import json
-import datetime
 import sys
 sys.path.insert(0, '../toys-data')
-import conf
 import pay
+
+import json
+import datetime
 
 filename_head = 'paymoneyList_n_'
 filename_result = filename_head + 'result'
