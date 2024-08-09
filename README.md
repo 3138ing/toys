@@ -18,8 +18,7 @@
 |#### 2022-04-08_mp3_from_mp4.py|> mp4에서 mp3추출|py|
 |#### 2022-01-26_wireshark_test_9999.lua|> WireShark에서 스크립트로 프로토콜 분석|lua|
 ||||
-|#### 2023-08-29_pay_gmarket.py|> 가계부 작성용|py|
-|#### 2023-08-29_pay.py|> 가계부 작성용|py|
+|#### 2023-08-31_pay_gmarket.py|> 가계부 작성용|py|
 |#### 2023-08-29_pay_shinhan.py|> 가계부 작성용|py|
 |#### 2023-08-14_pay_naver.py|> 가계부 작성용|py|
 ||||
