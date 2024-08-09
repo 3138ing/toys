@@ -1,3 +1,7 @@
+import sys
+sys.path.insert(0, '../toys-data')
+import pay
+
 import json
 from html.parser import HTMLParser
 
@@ -7,8 +11,6 @@ class gmarket_parser(HTMLParser):
         self.outters = []
     def handle_data(self, data):
         self.outters.append(data)
-
-pay = __import__('2023-08-29_pay')
 
 filename_head = 'paymoneyList_g_'
 filename_result = filename_head + 'result'
