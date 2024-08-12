@@ -1,3 +1,7 @@
+import sys
+sys.path.insert(0, '../toys-data')
+import pay
+
 import json
 import datetime
 import sys
@@ -11,8 +15,6 @@ def get_node(object, node_name_list):
             print("no", node_name)
             sys.exit(0)
     return search_object
-
-pay = __import__('2023-08-29_pay')
 
 filename_head = 'paymoneyList_n_'
 filename_result = filename_head + 'result'
