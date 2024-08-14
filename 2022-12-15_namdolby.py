@@ -12,9 +12,11 @@ from email.mime.text import MIMEText
 import ssl
 import smtplib
 
+project_id = '2022121500'
+
 class movie_request_item:
     def __init__(self, brchNo, brchNm, playDe):
-        self.url = 'https://www.megabox.co.kr/on/oh/ohc/Brch/schedulePage.do'
+        self.url = conf.get_base_url(project_id)
         self.json = {"masterType":"brch","brchNo":brchNo,"brchNm":brchNm,"firstAt":"Y","brchNo1":brchNo, "playDe":playDe}
         self.brchNm = brchNm
         self.playDe = playDe
