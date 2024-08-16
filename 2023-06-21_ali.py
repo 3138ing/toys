@@ -1,5 +1,7 @@
 # %%
-
+import sys
+sys.path.insert(0, '../toys-data')
+import conf
 
 # %%
 from urllib.request import urlopen
@@ -8,10 +10,12 @@ from bs4 import BeautifulSoup
 import json
 import time
 
-#page_base = "https://ko.aliexpress.com/w/wholesale-%EC%97%AC%EC%84%B1-%ED%99%94%EC%9E%A5%ED%92%88-%EB%A7%A4%EC%89%AC-%ED%8C%8C%EC%9A%B0%EC%B9%98.html?SearchText=%EC%97%AC%EC%84%B1+%ED%99%94%EC%9E%A5%ED%92%88+%EB%A7%A4%EC%89%AC+%ED%8C%8C%EC%9A%B0%EC%B9%98&catId=0&g=y&initiative_id=SB_20230620200505&spm=a2g0o.productlist.1000002.0&trafficChannel=main"
+project_id = '2023062100'
+
+#page_base = f"{conf.get_base_url(project_id)}/w/wholesale-%EC%97%AC%EC%84%B1-%ED%99%94%EC%9E%A5%ED%92%88-%EB%A7%A4%EC%89%AC-%ED%8C%8C%EC%9A%B0%EC%B9%98.html?SearchText=%EC%97%AC%EC%84%B1+%ED%99%94%EC%9E%A5%ED%92%88+%EB%A7%A4%EC%89%AC+%ED%8C%8C%EC%9A%B0%EC%B9%98&catId=0&g=y&initiative_id=SB_20230620200505&spm=a2g0o.productlist.1000002.0&trafficChannel=main"
 
 keyword = '여성 화장품 매쉬 파우치'
-page_base = f"https://ko.aliexpress.com/w/wholesale-{parse.quote(keyword.replace(' ', '-'))}.html?SearchText={parse.quote(keyword.replace(' ', '+'))}"
+page_base = f"{conf.get_base_url(project_id)}/w/wholesale-{parse.quote(keyword.replace(' ', '-'))}.html?SearchText={parse.quote(keyword.replace(' ', '+'))}"
 
 def get_url(page_number):
    if page_number == 1:
@@ -85,7 +89,7 @@ def do_parsing():
       else:
          price = int(content['prices']['salePrice']['formattedPrice'].replace('₩ ', '').replace(',', ''))
       if price < 1000:
-         print(num, price, displayTitle[:10], f'https://ko.aliexpress.com/item/{productId}.html')
+         print(num, price, displayTitle[:10], f'{conf.get_base_url(project_id)}/item/{productId}.html')
    return True
 
 for page_number in range(1, 11):
