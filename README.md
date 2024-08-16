@@ -8,7 +8,7 @@
 ||||
 |#### 2024-03-07_check_myip.ipynb|> 내 IP 모니터링|py|
 |#### 2024-03-06_camp.ipynb|> 캠핑 티켓 모니터링 #crawling #slack #email|py|
-|#### 2024-03-06_my_ip.ipynb|> 내 IP|py|
+|#### 2024-03-06_myip.ipynb|> 내 IP|py|
 |#### 2023-09-06_image_gps.py|> 이미지 GPS 확인|py|
 |#### 2023-07-12_sungnam.py|> 참가자 명단 확인 #crawling|py|
 |#### 2023-06-21_ali.py|> ali 검색결과 #crawling|py|
