@@ -6,6 +6,7 @@
 |#### 2023-03-28_snippet_dataframe.py|> pandas dataframe|py|
 |#### 2023-03-28_snippet_time.py|> datatime, time|py|
 ||||
+|#### 2024-03-07_check_myip.ipynb|> 내 IP 모니터링|py|
 |#### 2024-03-06_camp.ipynb|> 캠핑 티켓 모니터링 #crawling #slack #email|py|
 |#### 2024-03-06_my_ip.ipynb|> 내 IP|py|
 |#### 2023-09-06_image_gps.py|> 이미지 GPS 확인|py|
