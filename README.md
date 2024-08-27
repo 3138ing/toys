@@ -24,6 +24,7 @@
 |#### 2023-06-21_ali.py|> ali 검색결과 #crawling|py|
 |#### 2022-12-15_namdolby.py|> 메가박스 모니터링 #crawling #slack #email|py|
 ||||
+|#### 2024-08-01_bus.ipynb|> 버스위치정보 #data_go_kr|py|
 |#### 2024-05-13_airport.ipynb|> 공항주차장정보 #data_go_kr|py|
 ||||
 |#### 2023-08-31_pay_gmarket.py|> 가계부 작성용|py|
