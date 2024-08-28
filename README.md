@@ -1,3 +1,4 @@
+
 |filename|description|type|
 |------|---|---|
 |#### 2022-04-19_snippet_colab.py|> colab 환경설정|py|
@@ -26,6 +27,7 @@
 ||||
 |#### 2024-08-01_bus.ipynb|> 버스위치정보 #data_go_kr|py|
 |#### 2024-05-13_airport.ipynb|> 공항주차장정보 #data_go_kr|py|
+|#### 2024-05-13_airport.py|> 공항주차장정보 #data_go_kr|py|
 ||||
 |#### 2023-08-31_pay_gmarket.py|> 가계부 작성용|py|
 |#### 2023-08-29_pay_shinhan.py|> 가계부 작성용|py|
