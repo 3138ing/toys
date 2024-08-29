@@ -26,6 +26,7 @@
 |#### 2022-12-15_namdolby.py|> 메가박스 모니터링 #crawling #slack #email|py|
 ||||
 |#### 2024-08-01_bus.ipynb|> 버스위치정보 #data_go_kr|py|
+|#### 2024-08-01_bus.py|> 버스위치정보 #data_go_kr|py|
 |#### 2024-05-13_airport.ipynb|> 공항주차장정보 #data_go_kr|py|
 |#### 2024-05-13_airport.py|> 공항주차장정보 #data_go_kr|py|
 ||||
