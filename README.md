@@ -9,6 +9,7 @@
 ||||
 |#### 2024-07-29_slack_alive.ipynb|> Slack 동작 체크|py|
 |#### 2024-03-07_check_myip.ipynb|> 내 IP 모니터링|py|
+|#### 2024-03-07_check_myip.py|> -|py|
 |#### 2024-03-06_myip.ipynb|> 내 IP|py|
 |#### 2023-09-06_image_gps.py|> 이미지 GPS 확인|py|
 |#### 2023-04-13_show_vcf.py|> vcf 파일내용보기|py|
@@ -26,9 +27,9 @@
 |#### 2022-12-15_namdolby.py|> 메가박스 모니터링 #crawling #slack #email|py|
 ||||
 |#### 2024-08-01_bus.ipynb|> 버스위치정보 #data_go_kr|py|
-|#### 2024-08-01_bus.py|> 버스위치정보 #data_go_kr|py|
+|#### 2024-08-01_bus.py|> -|py|
 |#### 2024-05-13_airport.ipynb|> 공항주차장정보 #data_go_kr|py|
-|#### 2024-05-13_airport.py|> 공항주차장정보 #data_go_kr|py|
+|#### 2024-05-13_airport.py|> -|py|
 ||||
 |#### 2023-08-31_pay_gmarket.py|> 가계부 작성용|py|
 |#### 2023-08-29_pay_shinhan.py|> 가계부 작성용|py|
