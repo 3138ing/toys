@@ -7,8 +7,7 @@
 |#### 2023-03-28_snippet_dataframe.py|> pandas dataframe|py|
 |#### 2023-03-28_snippet_time.py|> datatime, time|py|
 ||||
-
-|#### 2024-07-08_pdf2image|> pdf2image sample|py|
+|#### 2024-07-08_pdf2image.ipynb|> pdf2image sample|py|
 |#### 2024-07-29_slack_alive.ipynb|> Slack 동작 체크|py|
 |#### 2024-07-29_slack_alive.py|> -|py|
 |#### 2024-03-07_check_myip.ipynb|> 내 IP 모니터링|py|
