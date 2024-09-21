@@ -10,7 +10,7 @@
 
 |#### 2024-07-08_pdf2image|> pdf2image sample|py|
 |#### 2024-07-29_slack_alive.ipynb|> Slack 동작 체크|py|
-|#### 2024-07-29_slack_alive.py|> Slack 동작 체크|py|
+|#### 2024-07-29_slack_alive.py|> -|py|
 |#### 2024-03-07_check_myip.ipynb|> 내 IP 모니터링|py|
 |#### 2024-03-07_check_myip.py|> -|py|
 |#### 2024-03-06_myip.ipynb|> 내 IP|py|
@@ -24,7 +24,8 @@
 ||||
 |#### 2024-07-08_ealim.ipynb|> 모니터 특정위치 반복 클릭|py|
 |#### 2024-03-18_kantukan.ipynb|> kantukan 확인용 #crawling|py|
-|#### 2024-03-06_camp.ipynb|> 캠핑 티켓 모니터링 #crawling #slack #email|py|
+|#### 2024-03-06_camp_연천재인폭포.ipynb|> 캠핑 티켓 모니터링 #crawling #slack #email|py|
+|#### 2024-05-18_camp_구름계곡.ipynb|> 캠핑 티켓 모니터링 #crawling #slack #email|py|
 |#### 2023-07-12_sungnam.py|> 참가자 명단 확인 #crawling|py|
 |#### 2023-06-21_ali.py|> ali 검색결과 #crawling|py|
 |#### 2022-12-15_namdolby.py|> 메가박스 모니터링 #crawling #slack #email|py|
