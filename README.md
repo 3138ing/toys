@@ -6,6 +6,7 @@
 |#### 2023-03-29_snippet_matplotlib.py|> pandas matplotlib|py|
 |#### 2023-03-28_snippet_dataframe.py|> pandas dataframe|py|
 |#### 2023-03-28_snippet_time.py|> datatime, time|py|
+|#### 2024-09-26_snippet.bat|> windows 전반|py|
 ||||
 |#### 2024-09-21_image_convert.ipynb|> image 크기/포멧 변환|py|
 |#### 2024-07-29_slack_alive.ipynb|> Slack 동작 체크|py|
