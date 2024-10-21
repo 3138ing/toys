@@ -38,6 +38,6 @@ def getmyip():
             return ""
 
 # %%
-slack("굿모닝", ":sun_with_face::smile:", getmyip())
+slack("굿모닝", ":sun_with_face::smile::herb:", getmyip())
 
 
