@@ -23,6 +23,7 @@
 |#### 2022-04-08_mp3_from_mp4.py|> mp4에서 mp3추출|py|
 |#### 2022-01-26_wireshark_test_9999.lua|> WireShark에서 스크립트로 프로토콜 분석|lua|
 ||||
+|#### 2024-11-04_camfit.ipynb|> 캠핑 정보 검색|py|
 |#### 2024-07-08_ealim.ipynb|> 모니터 특정위치 반복 클릭|py|
 |#### 2024-03-18_kantukan.ipynb|> kantukan 확인용 #crawling|py|
 |#### 2024-03-06_camp_연천재인폭포.ipynb|> 캠핑 티켓 모니터링 #crawling #slack #email|py|
@@ -36,9 +37,9 @@
 |#### 2024-05-13_airport.ipynb|> 공항주차장정보 #data_go_kr|py|
 |#### 2024-05-13_airport.py|> -|py|
 ||||
+|#### 2023-09-28_pay_naver_har.py|> 가계부 작성용|py|
 |#### 2023-08-31_pay_gmarket.py|> 가계부 작성용|py|
 |#### 2023-08-29_pay_shinhan.py|> 가계부 작성용|py|
 |#### 2023-08-14_pay_naver.py|> 가계부 작성용|py|
-|#### 2023-09-28_pay_naver_har.py|> 가계부 작성용|py|
 ||||
 |#### test.ipynb|> 테스트용|py|
