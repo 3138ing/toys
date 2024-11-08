@@ -37,6 +37,7 @@
 |#### 2024-05-13_airport.ipynb|> 공항주차장정보 #data_go_kr|py|
 |#### 2024-05-13_airport.py|> -|py|
 ||||
+|#### 2024-11-04_acc.ipynb|> 가계부 작성용|py|
 |#### 2023-09-28_pay_naver_har.py|> 가계부 작성용|py|
 |#### 2023-08-31_pay_gmarket.py|> 가계부 작성용|py|
 |#### 2023-08-29_pay_shinhan.py|> 가계부 작성용|py|
