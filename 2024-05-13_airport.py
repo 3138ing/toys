@@ -1,6 +1,8 @@
 # %%
-import sys
-sys.path.insert(0, '../toys-data')
+import os, sys
+from pathlib import Path
+toys_data_dir = str(Path(__file__).resolve().parent / '../toys-data')
+sys.path.insert(0, toys_data_dir)
 import conf
 
 # %%
@@ -10,6 +12,28 @@ import xml.etree.ElementTree as ElementTree
 import datetime, time
 import pandas as pd
 
+# %%
+import psutil
+
+def check_already_running():
+    current_pid = os.getpid()
+    # 실행 경로에 상관없이, 현재 실행 중인 파일 이름만 추출 (예: 'a.py')
+    current_script_name = os.path.basename(__file__)
+
+    for proc in psutil.process_iter(['pid', 'cmdline']):
+        try:
+            cmdline = proc.info['cmdline']
+            # 자기 자신(PID)은 제외
+            if cmdline and proc.info['pid'] != current_pid:
+                # 명령어 인자(cmdline) 중에 현재 파일 이름('a.py')이 포함되어 있는지 확인
+                if any(current_script_name in arg for arg in cmdline):
+                    return True
+        except (psutil.NoSuchProcess, psutil.AccessDenied, psutil.ZombieProcess):
+            continue
+    return False
+if check_already_running():
+    print(f"이미 {os.path.basename(__file__)} 프로세스가 실행 중이므로 종료합니다.", file=sys.stderr)
+    sys.exit(0)
 # %%
 conf.set_metplot_font('D2Coding')
 
@@ -21,7 +45,7 @@ column_names = ['국내선 제1주차장'
 , '화물청사']
 
 def log(msg):
-    with open('../toys-data/var/log/airport.log', 'ab') as f:
+    with open(f'{toys_data_dir}/var/log/airport.log', 'ab') as f:
         date = datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S')
         text = f'{date}|{msg}'
         #
@@ -30,7 +54,7 @@ def log(msg):
         #
 
 def elog(msg):
-    with open('../toys-data/var/log/airport_error.log', 'ab') as f:
+    with open(f'{toys_data_dir}/var/log/airport_error.log', 'ab') as f:
         date = datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S')
         text = f'{date}|{msg}'
         #
@@ -203,7 +227,7 @@ while True:
 # df
 names = ['assign_time']
 names.extend(column_names)
-df = pd.read_csv('../toys-data/var/log/airport.log', sep='|', header=None, names=names)
+df = pd.read_csv(f'{toys_data_dir}/var/log/airport.log', sep='|', header=None, names=names)
 # drop: -100 
 for column_name in column_names:
     df.drop(df[df[column_name] < -1].index, inplace=True)
